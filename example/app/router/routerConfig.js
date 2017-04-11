@@ -360,6 +360,19 @@ export default [
 		}
 	},
 	{
+		name: 'tagDemo',
+		moduleName: {
+			'en-us': 'Tag',
+			'zh-cn': '标签'
+		},
+		url: "/component/tag",
+		template: '<tag-demo></tag-demo>',
+		lazyload: require("bundle-loader?lazy&name=tagDemo!../components/tagdemo/tagdemo.js"),
+		tracking: {
+			key: 'tagdemo'
+		}
+	},
+	{
 		name: 'radio',
 		moduleName: {
 			'en-us': 'Radio',
